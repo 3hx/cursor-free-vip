@@ -43,10 +43,16 @@ function Write-Styled {
 # Get version number function
 function Get-LatestVersion {
     try {
-        $latestRelease = Invoke-RestMethod -Uri "https://api.github.com/repos/yeongpin/cursor-free-vip/releases/latest"
+        # Disabled automatic version checking from GitHub API
+        # Use a hard-coded version instead
         return @{
-            Version = $latestRelease.tag_name.TrimStart('v')
-            Assets = $latestRelease.assets
+            Version = "1.0.0"  # Fixed version to disable auto-updates
+            Assets = @( 
+                @{
+                    name = "CursorFreeVIP_1.0.0_windows.exe"
+                    browser_download_url = "https://github.com/3hx/cursor-free-vip/releases/download/v1.0.0/CursorFreeVIP_1.0.0_windows.exe"
+                }
+            )
         }
     } catch {
         Write-Styled $_.Exception.Message -Color $Theme.Error -Prefix "Error"

@@ -1,7 +1,7 @@
 name: ❓ Discussion & Question [English]
 description: Seeking help, discussing problems, asking questions, etc.
-title: '[Discussion]: '
-labels: ['question']
+title: "[Discussion]: "
+labels: ["question"]
 body:
   - type: markdown
     attributes:
@@ -19,9 +19,9 @@ body:
           required: true
         - label: I confirm that I need to raise questions and discuss problems, not Bug feedback or demand suggestions.
           required: true
-        - label: I have read [Github Issues](https://github.com/yeongpin/cursor-free-vip/issues) and searched for existing [open issues](https://github.com/yeongpin/cursor-free-vip/issues) and [closed issues](https://github.com/yeongpin/cursor-free-vip/issues?q=is%3Aissue%20state%3Aclosed%20), and found no similar issues.
+        - label: I have read [Github Issues](https://github.com/3hx/cursor-free-vip/issues) and searched for existing [open issues](https://github.com/3hx/cursor-free-vip/issues) and [closed issues](https://github.com/3hx/cursor-free-vip/issues?q=is%3Aissue%20state%3Aclosed%20), and found no similar issues.
           required: true
-          
+
   - type: dropdown
     id: platform
     attributes:

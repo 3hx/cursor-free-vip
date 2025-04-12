@@ -7,10 +7,10 @@
 
 <p align="center">
 
-[![Release](https://img.shields.io/github/v/release/yeongpin/cursor-free-vip?style=flat-square&logo=github&color=blue)](https://github.com/yeongpin/cursor-free-vip/releases/latest)
+[![Release](https://img.shields.io/github/v/release/3hx/cursor-free-vip?style=flat-square&logo=github&color=blue)](https://github.com/3hx/cursor-free-vip/releases/latest)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-[![Stars](https://img.shields.io/github/stars/yeongpin/cursor-free-vip?style=flat-square&logo=github)](https://github.com/yeongpin/cursor-free-vip/stargazers)
-[![Download](https://img.shields.io/github/downloads/yeongpin/cursor-free-vip/total?style=flat-square&logo=github&color=52c41a1)](https://github.com/yeongpin/cursor-free-vip/releases/latest)
+[![Stars](https://img.shields.io/github/stars/3hx/cursor-free-vip?style=flat-square&logo=github)](https://github.com/3hx/cursor-free-vip/stargazers)
+[![Download](https://img.shields.io/github/downloads/3hx/cursor-free-vip/total?style=flat-square&logo=github&color=52c41a1)](https://github.com/3hx/cursor-free-vip/releases/latest)
 
 </p>
 <h4>Support Latest 0.48.x Version | 支持最新 0.48.x 版本</h4>
@@ -22,7 +22,6 @@ Supports Windows, macOS and Linux.
 For optimal performance, run with privileges and always stay up to date.
 
 Always clean your browser's cache and cookies. If possible, use a VPN to create new accounts.
-
 
 這是一個自動化工具，自動註冊，支持 Windows 和 macOS 系統，完成 Auth 驗證，重置 Cursor 的配置。
 
@@ -42,29 +41,29 @@ Always clean your browser's cache and cookies. If possible, use a VPN to create 
 
 ## ✨ Features | 功能特點
 
-* 🌟 Google OAuth Authentication with Lifetime Access<br>使用 Google OAuth 認證（終身訪問）<br>
+- 🌟 Google OAuth Authentication with Lifetime Access<br>使用 Google OAuth 認證（終身訪問）<br>
 
-* ⭐ GitHub OAuth Authentication with Lifetime Access<br>使用 GitHub OAuth 認證（終身訪問）<br>
+- ⭐ GitHub OAuth Authentication with Lifetime Access<br>使用 GitHub OAuth 認證（終身訪問）<br>
 
-* Automatically register Cursor membership<br>自動註冊 Cursor 會員<br>
+- Automatically register Cursor membership<br>自動註冊 Cursor 會員<br>
 
-* Support Windows and macOS systems<br>支持 Windows 和 macOS 系統<br>
+- Support Windows and macOS systems<br>支持 Windows 和 macOS 系統<br>
 
-* Complete Auth verification<br>完成 Auth 驗證<br>
+- Complete Auth verification<br>完成 Auth 驗證<br>
 
-* Reset Cursor's configuration<br>重置 Cursor 的配置<br>
+- Reset Cursor's configuration<br>重置 Cursor 的配置<br>
 
-* Delete Cursor Google Account<br>删除 Cursor Google 账号<br>
+- Delete Cursor Google Account<br>删除 Cursor Google 账号<br>
 
-* Multi-language support (English, 简体中文, 繁體中文, Vietnamese)<br>多語言支持（英文、简体中文、繁體中文、越南語）<br>
+- Multi-language support (English, 简体中文, 繁體中文, Vietnamese)<br>多語言支持（英文、简体中文、繁體中文、越南語）<br>
 
 ## 💻 System Support | 系統支持
 
-| Windows |  x64  | ✅ | macOS |     Intel     | ✅ |
-|:-------:|:-----:|:-:|:-----:|:-------------:|:-:|
-| Windows |  x86  | ✅ | macOS | Apple Silicon | ✅ |
-|  Linux  |  x64  | ✅ | Linux |      x86      | ✅ |
-|  Linux  | ARM64 | ✅ | Linux |     ARM64     | ✅ |
+| Windows |  x64  | ✅  | macOS |     Intel     | ✅  |
+| :-----: | :---: | :-: | :---: | :-----------: | :-: |
+| Windows |  x86  | ✅  | macOS | Apple Silicon | ✅  |
+|  Linux  |  x64  | ✅  | Linux |      x86      | ✅  |
+|  Linux  | ARM64 | ✅  | Linux |     ARM64     | ✅  |
 
 ## 👀 How to use | 如何使用
 
@@ -74,13 +73,13 @@ Always clean your browser's cache and cookies. If possible, use a VPN to create 
 **Linux/macOS**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/yeongpin/cursor-free-vip/main/scripts/install.sh -o install.sh && chmod +x install.sh && ./install.sh
+curl -fsSL https://raw.githubusercontent.com/3hx/cursor-free-vip/main/scripts/install.sh -o install.sh && chmod +x install.sh && ./install.sh
 ```
 
 **Windows**
 
 ```powershell
-irm https://raw.githubusercontent.com/yeongpin/cursor-free-vip/main/scripts/install.ps1 | iex
+irm https://raw.githubusercontent.com/3hx/cursor-free-vip/main/scripts/install.ps1 | iex
 ```
 
 </details>
@@ -91,13 +90,13 @@ irm https://raw.githubusercontent.com/yeongpin/cursor-free-vip/main/scripts/inst
 **Linux/macOS**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/yeongpin/cursor-free-vip/main/scripts/reset.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/3hx/cursor-free-vip/main/scripts/reset.sh | sudo bash
 ```
 
 **Windows**
 
 ```powershell
-irm https://raw.githubusercontent.com/yeongpin/cursor-free-vip/main/scripts/reset.ps1 | iex
+irm https://raw.githubusercontent.com/3hx/cursor-free-vip/main/scripts/reset.ps1 | iex
 ```
 
 </details>
@@ -108,6 +107,7 @@ If you want to stop the script, please press Ctrl+C<br>要停止腳本，請按 
 
 📝 Config | 文件配置
 `Win / Macos / Linux Path | 路徑 [Documents/.cursor-free-vip/config.ini]`
+
 <details>
 <summary><b>⭐ Config | 文件配置</b></summary>
 
@@ -170,27 +170,26 @@ show_account_info = True
 
 </details>
 
-* Use administrator privileges to run the script <br>請使用管理員身份運行腳本
+- Use administrator privileges to run the script <br>請使用管理員身份運行腳本
 
-* Confirm that Cursor is closed before running the script <br>請確保在運行腳本前已經關閉 Cursor<br>
+- Confirm that Cursor is closed before running the script <br>請確保在運行腳本前已經關閉 Cursor<br>
 
-* This tool is only for learning and research purposes <br>此工具僅供學習和研究使用<br>
+- This tool is only for learning and research purposes <br>此工具僅供學習和研究使用<br>
 
-* Please comply with the relevant software usage terms when using this tool <br>使用本工具時請遵守相關軟件使用條款
+- Please comply with the relevant software usage terms when using this tool <br>使用本工具時請遵守相關軟件使用條款
 
 ## 🚨 Common Issues | 常見問題
 
-|                   如果遇到權限問題，請確保：                    |                   此腳本以管理員身份運行                    |
-|:--------------------------------------------------:|:------------------------------------------------:|
-| If you encounter permission issues, please ensure: | This script is run with administrator privileges |
-| Error 'User is not authorized' | This means your account was banned for using temporary (disposal) mail. Ensure using a non-temporary mail service |
-## 🤩 Contribution | 貢獻
+|             如果遇到權限問題，請確保：             |                                              此腳本以管理員身份運行                                               |
+| :------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
+| If you encounter permission issues, please ensure: |                                 This script is run with administrator privileges                                  |
+|           Error 'User is not authorized'           | This means your account was banned for using temporary (disposal) mail. Ensure using a non-temporary mail service |
+|                 ## 🤩 Contribution                 |                                                       貢獻                                                        |
 
 歡迎提交 Issue 和 Pull Request！
 
-
-<a href="https://github.com/yeongpin/cursor-free-vip/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yeongpin/cursor-free-vip&preview=true&max=&columns=" />
+<a href="https://github.com/3hx/cursor-free-vip/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=3hx/cursor-free-vip&preview=true&max=&columns=" />
 </a>
 <br /><br />
 
@@ -220,7 +219,7 @@ by the user.
 
 <div align="center">
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yeongpin/cursor-free-vip&type=Date)](https://star-history.com/#yeongpin/cursor-free-vip&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=3hx/cursor-free-vip&type=Date)](https://star-history.com/#3hx/cursor-free-vip&Date)
 
 </div>
 

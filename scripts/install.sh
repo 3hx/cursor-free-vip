@@ -38,19 +38,10 @@ get_downloads_dir() {
 
 # Get latest version
 get_latest_version() {
-    echo -e "${CYAN}ℹ️ Checking latest version...${NC}"
-    latest_release=$(curl -s https://api.github.com/repos/yeongpin/cursor-free-vip/releases/latest) || {
-        echo -e "${RED}❌ Cannot get latest version information${NC}"
-        exit 1
-    }
+    echo "Checking latest version..."
+    VERSION="1.0.0" # Fixed version to disable auto-updates
     
-    VERSION=$(echo "$latest_release" | grep -o '"tag_name": ".*"' | cut -d'"' -f4 | tr -d 'v')
-    if [ -z "$VERSION" ]; then
-        echo -e "${RED}❌ Failed to parse version from GitHub API response:\n${latest_release}"
-        exit 1
-    fi
-
-    echo -e "${GREEN}✅ Found latest version: ${VERSION}${NC}"
+    return 0
 }
 
 # Detect system type and architecture
@@ -87,7 +78,7 @@ install_cursor_free_vip() {
     local downloads_dir=$(get_downloads_dir)
     local binary_name="CursorFreeVIP_${VERSION}_${OS}"
     local binary_path="${downloads_dir}/${binary_name}"
-    local download_url="https://github.com/yeongpin/cursor-free-vip/releases/download/v${VERSION}/${binary_name}"
+    local download_url="https://github.com/3hx/cursor-free-vip/releases/download/v${VERSION}/${binary_name}"
     
     # Check if file already exists
     if [ -f "${binary_path}" ]; then
@@ -130,7 +121,7 @@ install_cursor_free_vip() {
         if [[ "$OS" == "mac_arm64" || "$OS" == "mac_intel" ]]; then
             OS="mac"
             binary_name="CursorFreeVIP_${VERSION}_${OS}"
-            download_url="https://github.com/yeongpin/cursor-free-vip/releases/download/v${VERSION}/${binary_name}"
+            download_url="https://github.com/3hx/cursor-free-vip/releases/download/v${VERSION}/${binary_name}"
             echo -e "${CYAN}ℹ️ New download link: ${download_url}${NC}"
             
             if ! curl --output /dev/null --silent --head --fail "$download_url"; then
@@ -140,7 +131,7 @@ install_cursor_free_vip() {
         elif [[ "$OS" == "linux_x64" || "$OS" == "linux_arm64" ]]; then
             OS="linux"
             binary_name="CursorFreeVIP_${VERSION}_${OS}"
-            download_url="https://github.com/yeongpin/cursor-free-vip/releases/download/v${VERSION}/${binary_name}"
+            download_url="https://github.com/3hx/cursor-free-vip/releases/download/v${VERSION}/${binary_name}"
             echo -e "${CYAN}ℹ️ New download link: ${download_url}${NC}"
             
             if ! curl --output /dev/null --silent --head --fail "$download_url"; then
